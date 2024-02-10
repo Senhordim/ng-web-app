@@ -1,0 +1,19 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-header span a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.app-header span a img {
+  width: 90px;
+}
+
+.title-group i {
+  color: white;
+}
