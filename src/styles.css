@@ -6,7 +6,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 :root {
   --red-color-01: rgb(223, 31, 31);
+  --white-color-01: rgb(255, 255, 255);
 }
+
+/* custom */
 
 .red {
   color: var(--red-color-01);
