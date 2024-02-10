@@ -1,0 +1,21 @@
+.app-footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.app-footer span {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.app-footer span a {
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.app-footer span a:hover {
+  text-decoration: underline;
+}
