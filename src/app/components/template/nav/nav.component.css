@@ -10,3 +10,8 @@
 .app-sidenav i {
   padding-right: 10px;
 }
+
+.app-sidenav-content {
+  padding: 16px;
+  background-color: var(--white-color-01);
+}
