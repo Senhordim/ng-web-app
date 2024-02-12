@@ -13,10 +13,13 @@ import { NavComponent } from './components/template/nav/nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './views/home/home.component';
 import { ProductsComponent } from './views/products/products.component';
 import { RedDirective } from './directives/red.directive';
 import { ForDirective } from './directives/for.directive';
+import { ProductCreateComponent } from './components/products/product-create/product-create.component';
+import { ProfileComponent } from './views/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,9 @@ import { ForDirective } from './directives/for.directive';
     HomeComponent,
     ProductsComponent,
     RedDirective,
-    ForDirective
+    ForDirective,
+    ProductCreateComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +42,8 @@ import { ForDirective } from './directives/for.directive';
     MatIconModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

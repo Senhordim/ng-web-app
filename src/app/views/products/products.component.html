@@ -1,3 +1,13 @@
+<mat-toolbar class="view-products-toolbar">
+  <span>Produtos</span>
+  <button
+    mat-flat-button
+    (click)="navigateToProductCreate()"
+    color="primary"
+  >Adicionar
+  </button>
+</mat-toolbar>
+
 <span>
   <ul>
     <li *myFor="let n in [1, 2, 3, 4]">{{ n }}</li>
