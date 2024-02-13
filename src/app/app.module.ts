@@ -20,6 +20,10 @@ import { RedDirective } from './directives/red.directive';
 import { ForDirective } from './directives/for.directive';
 import { ProductCreateComponent } from './components/products/product-create/product-create.component';
 import { ProfileComponent } from './views/profile/profile.component';
+import { ToolbarComponent } from './components/template/toolbar/toolbar.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,8 @@ import { ProfileComponent } from './views/profile/profile.component';
     RedDirective,
     ForDirective,
     ProductCreateComponent,
-    ProfileComponent
+    ProfileComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +48,9 @@ import { ProfileComponent } from './views/profile/profile.component';
     MatSidenavModule,
     MatListModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSnackBarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
