@@ -3,3 +3,12 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.create-product-mat-card{
+  margin-top: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}

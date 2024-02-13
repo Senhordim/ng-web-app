@@ -10,6 +10,11 @@ import { Product } from '../models/product.model';
 })
 export class ProductCreateComponent implements OnInit {
 
+  product: Product = {
+    name: '',
+    price: 0
+  };
+
   constructor(
     private productsService: ProductsService,
     private router: Router
@@ -19,10 +24,14 @@ export class ProductCreateComponent implements OnInit {
   }
 
   createProduct(): void {
-    this.productsService.createProduct({
-      name: 'Product 10',
-      price: 10.58
-    }).subscribe(() => {
+    if(this.product.name === '' || this.product.price === 0) {
+      this.productsService.showMessage('Preencha todos os campos!');
+      return;
+    }
+    this.productsService.createProduct(this.product).subscribe((value) => {
+      console.log("-----------");
+      console.log(value);
+      console.log("-----------");
       this.productsService.showMessage('Produto criado com sucesso!');
       this.router.navigate(['/products']);
     });
